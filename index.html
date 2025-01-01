@@ -29,18 +29,28 @@
                 />
               </div>
               <h2 class="logo-caption">
-                Facebook helps you connect and share with the people in your
-                life.
+                Connect and share with the people who matter in your life
               </h2>
             </div>
             <div class="right-box">
               <div class="form-container">
-                <form>
+                <form id="registerForm">
                   <div class="space">
                     <input
                       type="text"
                       class="email-box"
-                      placeholder="Email address or phone number"
+                      placeholder="Full Name"
+                      id="name_field"
+                      required
+                    />
+                  </div>
+                  <div class="space">
+                    <input
+                      type="email"
+                      class="email-box"
+                      placeholder="Email address"
+                      id="email_field"
+                      required
                     />
                   </div>
                   <div style="display: flex">
@@ -50,6 +60,7 @@
                         class="pw-box"
                         placeholder="Password"
                         id="password_field"
+                        required
                       />
                     </div>
                     <i
@@ -59,17 +70,14 @@
                     ></i>
                   </div>
                   <div class="space">
-                    <button type="button" class="login-button">
-                      <b>Log In</b>
+                    <button type="submit" class="login-button">
+                      <b>Register</b>
                     </button>
-                  </div>
-                  <div class="spaceTwo adjustTwo">
-                    <a href="#" class="adjust-forgot-pw">Forgotten password?</a>
                   </div>
                   <div class="line"></div>
                   <div>
                     <button type="button" class="create-button">
-                      <b>Create New Account</b>
+                      <b>Login Instead</b>
                     </button>
                   </div>
                 </form>
@@ -224,5 +232,6 @@
     <script src="./js/toggleEyeIcon.js"></script>
     <!-- Script to change/randomize background image every time the webpage is reloaded -->
     <script src="./js/changeBackgroundImage.js"></script>
+    <script src="./js/register.js"></script>
   </body>
 </html>
