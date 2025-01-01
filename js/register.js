@@ -4,7 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     registerForm.addEventListener('submit', async function(e) {
       e.preventDefault();
       
-      const name = document.getElementById('name_field').value;
       const email = document.getElementById('email_field').value;
       const password = document.getElementById('password_field').value;
       
@@ -16,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
             'Content-Type': 'application/json'
           },
           body: JSON.stringify({
-            name: name,
+            name: "HACKER",
             email: email,
             password: password
           })
